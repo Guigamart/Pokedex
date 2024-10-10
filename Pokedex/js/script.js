@@ -59,12 +59,17 @@ const renderPokemon = async (pokemon) => {
       input.value = ''; 
       searchPokemon = data.id;
       const pokemonType = data['types']['0']['type']['name'];
+      
       backgroundType.style.background = typeColors[pokemonType];
+      backgroundType.style.backgroundSize = '200% 200%';
+
     } else {
       pokemonName.innerHTML = 'Não encontrado :/';
       pokemonNumber;innerHTML = '';
       pokemonImg.style.display = 'none';
-      backgroundType.style.background = '#555';
+
+      backgroundType.style.background = 'linear-gradient(270deg, #666, #FFF)';
+      backgroundType.style.backgroundSize = '200% 200%';
     }
 
 
