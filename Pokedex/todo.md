@@ -1,0 +1,1 @@
+Ajustar animações do fundo gradient. Não estão funcionando.
